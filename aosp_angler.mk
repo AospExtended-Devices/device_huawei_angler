@@ -35,6 +35,11 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 $(call inherit-product, device/huawei/angler/device.mk)
 $(call inherit-product-if-exists, vendor/huawei/angler/angler-vendor.mk)
+$(call inherit-product, vendor/aosp/common.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
 
 PRODUCT_PACKAGES += \
     Launcher3
