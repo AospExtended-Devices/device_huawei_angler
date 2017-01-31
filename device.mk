@@ -281,6 +281,10 @@ PRODUCT_PACKAGES += \
     power.angler \
     thermal.angler
 
+# Qualcomm BT aptXHD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bt.enableAptXHD=true
+
 PRODUCT_COPY_FILES += \
     device/huawei/angler/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/huawei/angler/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
