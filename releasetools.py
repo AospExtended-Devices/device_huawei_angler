@@ -98,6 +98,13 @@ def FindRadio(zipfile):
 
 
 def FullOTA_InstallEnd(info):
+  buildpropfix(info)
+
+def buildpropfix(info):
+  info.script.AppendExtra('ui_print("/vendor/build.prop fixer by gladiac");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/tmp/install/bin/buildpropfix.sh");')
+  info.script.AppendExtra('ui_print("Done");')
+
   try:
     bootloader_img = info.input_zip.read("RADIO/bootloader.img")
   except KeyError:
@@ -110,7 +117,6 @@ def FullOTA_InstallEnd(info):
     WriteRadio(info, radio_img)
   else:
     print "no radio.img in target_files; skipping install"
-
 
 def IncrementalOTA_VerifyEnd(info):
   target_radio_img = FindRadio(info.target_zip)

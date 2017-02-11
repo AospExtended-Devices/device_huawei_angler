@@ -197,6 +197,10 @@ PRODUCT_PACKAGES += \
     libOmxVdecHevc \
     libOmxVenc
 
+# Buildpropfix
+PRODUCT_COPY_FILES += \
+    device/huawei/angler/buildpropfix.sh:install/bin/buildpropfix.sh
+
 #CAMERA
 PRODUCT_PACKAGES += \
     camera.msm8994 \
