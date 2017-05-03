@@ -167,4 +167,8 @@ BOARD_HARDWARE_CLASS := \
     hardware/cyanogen/cmhw \
     device/huawei/angler/cmhw
 
+# Audio effects for DSP Manager
+TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
+TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
+
 -include vendor/huawei/angler/BoardConfigVendor.mk
