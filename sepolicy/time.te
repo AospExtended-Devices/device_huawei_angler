@@ -20,3 +20,5 @@ allow time self:socket create_socket_perms;
 userdebug_or_eng(`
     allow time shared_log_device:chr_file rw_file_perms;
 ')
+
+allow time time_data_file:dir search;

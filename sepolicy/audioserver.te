@@ -17,3 +17,5 @@ allow audioserver perfd:unix_stream_socket connectto;
 
 # allow reading /sys/devices/soc0/hw_platform for acdb
 allow audioserver sysfs:file { getattr open read };
+
+allow audioserver persist_file:file create_file_perms;
