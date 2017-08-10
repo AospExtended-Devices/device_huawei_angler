@@ -51,5 +51,5 @@ PRODUCT_PACKAGES += \
 # Override build properties.
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:7.1.2/N2G47W/3938523:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 7.1.2 N2G47W 3938523 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:7.1.2/N2G48C/4104010:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 7.1.2 N2G48C 4104010 release-keys"
