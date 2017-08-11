@@ -177,5 +177,6 @@ BOARD_HARDWARE_CLASS := \
 # Audio effects for DSP Manager
 TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
 TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
+TARGET_NO_DSPMANAGER := true
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
