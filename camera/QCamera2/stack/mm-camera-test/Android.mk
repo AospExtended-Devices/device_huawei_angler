@@ -100,7 +100,7 @@ else
         LOCAL_CFLAGS += -DCAMERA_ION_FALLBACK_HEAP_ID=ION_CAMERA_HEAP_ID
         LOCAL_CFLAGS += -DNUM_RECORDING_BUFFERS=5
 endif
-LOCAL_CFLAGS += -Wall -Wextra -Werror
+LOCAL_CFLAGS +=
 
 LOCAL_SHARED_LIBRARIES:= \
          liblog libcutils libdl libmmcamera_interface
@@ -211,7 +211,7 @@ else
         LOCAL_CFLAGS += -DCAMERA_ION_FALLBACK_HEAP_ID=ION_CAMERA_HEAP_ID
         LOCAL_CFLAGS += -DNUM_RECORDING_BUFFERS=5
 endif
-LOCAL_CFLAGS += -Wall -Wextra -Werror
+LOCAL_CFLAGS +=
 
 LOCAL_SHARED_LIBRARIES:= \
          liblog libcutils libdl libmmcamera_interface
@@ -230,7 +230,7 @@ LOCAL_SRC_FILES := src/cam_semaphore_tests.cpp
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/../common
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror
+LOCAL_CFLAGS :=
 
 LOCAL_MODULE := cam_semaphore_tests
 LOCAL_MODULE_TAGS := tests

@@ -5,7 +5,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 # Too many clang warnings/errors, see b/23163853.
-LOCAL_CLANG := false
+LOCAL_CLANG := true
 
 LOCAL_SRC_FILES := \
         util/QCameraCmdThread.cpp \
@@ -38,7 +38,6 @@ LOCAL_SRC_FILES += \
         HAL/QCameraParameters.cpp \
         HAL/QCameraThermalAdapter.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Werror
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 LOCAL_CFLAGS += -DENABLE_MODEL_INFO_EXIF
 
