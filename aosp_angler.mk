@@ -42,7 +42,8 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    WallpaperPicker
 
 PRODUCT_PACKAGES += \
     AOSPLinks
