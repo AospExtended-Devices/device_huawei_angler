@@ -231,7 +231,7 @@ PRODUCT_PACKAGES += \
 # Buildpropfix
 PRODUCT_COPY_FILES += \
     device/huawei/angler/buildpropfix.sh:install/bin/buildpropfix.sh
-=======
+    
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libtinyxml \
     libprotobuf-cpp-full
-=======
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl
 
