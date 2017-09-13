@@ -188,7 +188,7 @@ BOARD_HARDWARE_CLASS := \
 TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
 TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
 TARGET_NO_DSPMANAGER := true
-=======
+
 TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
 
 -include vendor/huawei/angler/BoardConfigVendor.mk
