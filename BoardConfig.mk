@@ -55,15 +55,7 @@ AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_DSM_FEEDBACK := true
 
 BOARD_SUPPORTS_SOUND_TRIGGER := true
-
 BOARD_USES_ALSA_AUDIO := true
-
-# Needed for VoLTE
-AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
-AUDIO_FEATURE_ENABLED_DSM_FEEDBACK := true
-
-BOARD_SUPPORTS_SOUND_TRIGGER := true
-
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/angler/bluetooth
@@ -107,15 +99,6 @@ OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Enable auto suspend in poweroff charging to save power
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
-# Enable dex-preoptimization to speed up first boot sequence
-#ifeq ($(HOST_OS),linux)
-#  ifneq ($(TARGET_BUILD_VARIANT),eng)
-#    ifeq ($(WITH_DEXPREOPT),)
-#      WITH_DEXPREOPT := true
-#    endif
-#  endif
-#endif
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
@@ -184,18 +167,7 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 USE_CLANG_PLATFORM_BUILD := true
 
 # Sdclang
-TARGET_USE_SDCLANG := true
-
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := \
-    hardware/cyanogen/cmhw \
-    device/huawei/angler/cmhw
-
-# Audio effects for DSP Manager
-TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
-TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
-TARGET_NO_DSPMANAGER := true
+# TARGET_USE_SDCLANG := true
 
 TARGET_FS_CONFIG_GEN += device/huawei/angler/config.fs
 
